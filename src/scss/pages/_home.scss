@@ -1,0 +1,77 @@
+// dashboard 
+.dashboard {
+    &__call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+
+        &__item {
+            padding: 15px;
+            border-radius: 6px;
+            background-color: #f0f7fe;
+            text-align: center;
+            // min-width: 180px;
+            flex: 1;
+
+            &__label {
+
+            }
+
+            &__value {
+              
+
+            }
+
+            &:not(:last-child){
+                margin-inline-end: 20px;
+            }
+
+            &:nth-child(2){
+                background-color: #e8fcf2;
+            }
+
+            
+            &:nth-child(3){
+                background-color: #fffbe5;
+            }
+
+            
+            &:nth-child(4){
+                background-color: #ffeeee;
+            }
+
+        }
+    }
+
+    &__missed-calls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__missed-call {
+        flex: 1;
+        margin-inline-end: 20px;
+        
+            &:not(:last-child){
+                margin-top: 15px;
+                border-inline-end: 1px solid $border-color;
+            }
+    }
+
+    &__call-range {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        &__item {
+            flex: 1;
+
+            &:not(:last-child){
+                margin-inline-end: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+aside {
+  height: 100%;
+  background-color: $color-grey-light;
+  
+  .side-menu {
+    height: 56px;
+    border-bottom: 1px solid $border-color;
+
+    &__logo {
+      width: 120px;
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+
+    &__nav {
+      padding: 0 16px;
+      margin-top: 25px;
+
+      &__item {
+        margin-bottom: 8px;
+        padding: 0 8px;
+        font-size: rem(14);
+
+        &:hover, &--active {
+          background-color: #d7edff;
+          border-radius: 6px;
+          color: $color-blue;
+
+          .icon::before {
+            color: currentColor;
+          }
+        }
+      }
+    }
+  }
+}

@@ -13,9 +13,10 @@
 // COMPONENT
 @import "components/scroll", "components/spinner", "components/form",
   "components/pagination", "components/card", "components/buttons",
-  "components/tabs", "components/modal";
+  "components/tabs", "components/modal", "components/tables";
 
 // PAGES
+@import "pages/home", "pages/contact";
 
 // LAYOUT
-@import "layout/header";
+@import "layout/header", "layout/aside";

@@ -20,23 +20,26 @@ $grid-breakpoints: (
 );
 
 // BUTTONS
-$btn-padding-y: 10px;
-$btn-padding-x: 30px;
-$btn-font-size: 14px;
+$btn-padding-y: 11px;
+$btn-padding-x: 23px;
+$btn-font-size: 16px;
 $btn-font-weight: bold;
 
-$btn-padding-y-lg: 16px;
-$btn-padding-x-lg: 99px;
-$btn-border-radius: 41px;
-$btn-border-radius-lg: 41px;
-$btn-border-radius-sm: 41px;
+$btn-padding-y-lg: 8px;
+$btn-padding-x-lg: 60px;
+$btn-border-radius: 6px;
+$btn-border-radius-lg: 6px;
+$btn-border-radius-sm: 6px;
+$primary: #27ae60;
+$secondary: #4094f7;
+$dark: #e8e9ea;
 
-// //  FONT FAMILY
+//FONT FAMILY
 $font-family-base: $font-regular !important;
-// $spacer: 40px;
+
 // FORM
 $form-group-margin-bottom: 30px;
-$input-height: 42px;
+$input-height: 36px;
 
 // CARD
 $card-border-width: 0;
@@ -45,6 +48,9 @@ $card-border-color: transparent;
 .card {
   box-shadow: $main-box-shadow;
 }
+
+// table
+$table-accent-bg: #f6f8f9;
 
 // DROP DOWN
 $dropdown-spacer: 1rem;

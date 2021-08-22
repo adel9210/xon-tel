@@ -1,28 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style-rtl.min.css" />
     <title>Xon-Tel</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="loader">
-        <div class="loader__item">
-            <img src="assets/img/logo.png" alt="Logo" />
-            <div></div>
-        </div>
+      <div class="loader__item">
+        <img src="assets/img/logo.png" alt="Logo" />
+        <div></div>
+      </div>
     </div>
 
-    <main>
-        <h1>بسم الله الرحمن الرحيم</h1>
-    </main>
+    <main class="main">
+      <div class="row">
+        <div class="col-md-2 p-0">
+          <aside>
+            <div class="side-menu">
+              <div class="side-menu__top">
+                <img
+                  class="side-menu__logo"
+                  src="assets/img/logo.png"
+                  alt="Logo"
+                />
+                <i class="icon icon-chat side-menu__burger"></i>
+              </div>
+              <ul class="side-menu__nav">
+                <li class="side-menu__nav__item side-menu__nav__item--active">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-home"></i
+                    ></span>
+                    <span>الرئيسية</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-paperclip"></i
+                    ></span>
+                    <span>لوحة التحكم الخاصة بي</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-home"></i
+                    ></span>
+                    <span>ادارة جهات الاتصال</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-paperclip"></i
+                    ></span>
+                    <span>ادارة الشكاوي</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <header class="header">
+            <div class="header__items">
+              <li class="header__item">
+                <a
+                  href="#"
+                  class="header__item__link header__item__link--change-lang"
+                >
+                  English
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+            </div>
+          </header>
 
+          <section class="dashboard">
+            <h2 class="main-heading">الرئيسية</h2>
+            <h3 class="primary-heading">الخميس، ١٢ أغسطس ٢٠٢١، ١١:٣٠ ص</h3>
+
+            <div class="card">
+              <h3 class="primary-heading card__title">
+                <span class="utl-icon-wrapper"
+                  ><i class="icon icon-chat"></i
+                ></span>
+                قائمة مركز الاتصال في الوقت الحالي
+              </h3>
+              <div class="dashboard__call">
+                <div class="dashboard__call__item">
+                  <img
+                    class="dashboard__call__item__icon"
+                    src="assets/img/icon/sand-clock.svg"
+                    alt="Icon"
+                  />
+                  <h2 class="dashboard__call__item__label utl-card-label">
+                    مكالمات قائمة الانتظار
+                  </h2>
+                  <h5 class="dashboard__call__item__value utl-card-value">0</h5>
+                </div>
+                <div class="dashboard__call__item">
+                  <img
+                    class="dashboard__call__item__icon"
+                    src="assets/img/icon/customer.svg"
+                    alt="Icon"
+                  />
+                  <h2 class="dashboard__call__item__label utl-card-label">
+                    وكلاء نشطون
+                  </h2>
+                  <h5 class="dashboard__call__item__value utl-card-value">0</h5>
+                </div>
+                <div class="dashboard__call__item">
+                  <img
+                    class="dashboard__call__item__icon"
+                    src="assets/img/icon/sand-clock.svg"
+                    alt="Icon"
+                  />
+                  <h2 class="dashboard__call__item__label utl-card-label">
+                    وكلاء جاهزون
+                  </h2>
+                  <h5 class="dashboard__call__item__value utl-card-value">0</h5>
+                </div>
+                <div class="dashboard__call__item">
+                  <img
+                    class="dashboard__call__item__icon"
+                    src="assets/img/icon/customer.svg"
+                    alt="Icon"
+                  />
+                  <h2 class="dashboard__call__item__label utl-card-label">
+                    المكالمات الحالية
+                  </h2>
+                  <h5 class="dashboard__call__item__value utl-card-value">0</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="primary-heading card__title">
+                <span class="utl-icon-wrapper"
+                  ><i class="icon icon-chat"></i
+                ></span>
+                قائمة المكالمات الواردة اليوم
+              </h3>
+              <div class="dashboard__missed-calls">
+                <div class="dashboard__missed-call">
+                  <h2 class="dashboard__missed-call__label utl-card-label">
+                    الاجمالي
+                  </h2>
+                  <h5 class="dashboard__missed-call__value utl-card-value">
+                    0
+                  </h5>
+                </div>
+                <div class="dashboard__missed-call">
+                  <h2 class="dashboard__missed-call__label utl-card-label">
+                    تم الرد
+                  </h2>
+                  <h5 class="dashboard__missed-call__value utl-card-value">
+                    0
+                  </h5>
+                </div>
+                <div class="dashboard__missed-call">
+                  <h2 class="dashboard__missed-call__label utl-card-label">
+                    لم يتم الرد
+                  </h2>
+                  <h5 class="dashboard__missed-call__value utl-card-value">
+                    0
+                  </h5>
+                </div>
+                <div class="dashboard__missed-call">
+                  <h2 class="dashboard__missed-call__label utl-card-label">
+                    المكالمات المهجورة حسب الوكيل
+                  </h2>
+                  <h5 class="dashboard__missed-call__value utl-card-value">
+                    0
+                  </h5>
+                </div>
+                <div class="dashboard__missed-call">
+                  <h2 class="dashboard__missed-call__label utl-card-label">
+                    مشغولة
+                  </h2>
+                  <h5 class="dashboard__missed-call__value utl-card-value">
+                    0
+                  </h5>
+                </div>
+              </div>
+              <div class="dashboard__call-range">
+                <div class="card-small dashboard__call-range__item">
+                  <h2 class="utl-card-label">متوسط وقت التحدث</h2>
+                  <h3 class="utl-card-value">00:00:00</h3>
+                </div>
+                <div class="card-small dashboard__call-range__item">
+                  <h2 class="utl-card-label">اقصي وقت انتظار في قوائم الانتظار</h2>
+                  <h3 class="utl-card-value">00:00:00</h3>
+                </div>
+                <div class="card-small dashboard__call-range__item">
+                  <h2 class="utl-card-label">متوسط وقت انتظار في قوائم الانتظار</h2>
+                  <h3 class="utl-card-value">00:00:00</h3>
+                </div>
+                <div class="card-small dashboard__call-range__item">
+                  <h2 class="utl-card-label">اجمالي وقت انتظار في قوائم الانتظار</h2>
+                  <h3 class="utl-card-value">00:00:00</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
@@ -30,6 +239,5 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/wow.min.js"></script>
     <script src="assets/js/app.js"></script>
-</body>
-
+  </body>
 </html>

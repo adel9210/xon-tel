@@ -1,46 +1,32 @@
 .pagination-items {
-  justify-content: center;
+  justify-content: flex-end;
   margin: 30px 0;
 
   .page-item {
-    margin: 0 10px;
+    margin: 0 5px;
   }
 
   .page-link {
     padding: 0;
     width: 42px;
     height: 42px;
-    border-radius: 50% !important;
-    // background-color: $color-light-grey-3;
+    border-radius: 6px !important;
     border-color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    color: $color-grey;
-    // transition: $transition-type;
+    color: $text-color;
 
     &.active {
-      // background: $main-bg-gradient;
-      color: #fff;
+      color: $color-blue;
+      background-color: #ecf0ff;
     }
 
     &:hover {
-      // background: $main-bg-gradient;
-      color: $color-white;
+      color: $color-blue;
+      background-color: #ecf0ff;
     }
-
-    .icon-left-arrow {
-      @if $direction == ltr {
-          transform: rotate(180deg);
-      }
-    }
-
-    .icon-right-arrow {
-        @if $direction == ltr {
-            transform: rotate(180deg);
-        }
-      }
   }
 }
 

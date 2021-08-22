@@ -1,10 +1,23 @@
 .card {
-    // @extend .utl-card-hover;
-	@include media-breakpoint-down(sm) {
-	  margin-bottom: 20px;
-	}
-	&-text {
-		color: $color-dark;
-		line-height: 24px;
+    padding: 15px 20px;
+	border-radius: 6px;
+	box-shadow: $main-box-shadow;
+	margin: 20px 0;
+
+	&__title {
+		display: flex;
+		align-items: center;
+		color: $color-orange;
 	}
   }
+
+  .card-small {
+	padding: 14px;
+	border-radius: 6px;
+	background-color: #f0f7fe;
+	text-align: center;
+
+	&--1 {
+		background-color: #fcfbec;
+	} 
+}

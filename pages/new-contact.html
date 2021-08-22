@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/style-rtl.min.css" />
+    <title>Xon-Tel - New Contact</title>
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loader__item">
+        <img src="../assets/img/logo.png" alt="Logo" />
+        <div></div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="row">
+        <div class="col-md-2 p-0">
+          <aside>
+            <div class="side-menu">
+              <div class="side-menu__top">
+                <img
+                  class="side-menu__logo"
+                  src="../assets/img/logo.png"
+                  alt="Logo"
+                />
+                <i class="icon icon-chat side-menu__burger"></i>
+              </div>
+              <ul class="side-menu__nav">
+                <li class="side-menu__nav__item side-menu__nav__item--active">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-home"></i
+                    ></span>
+                    <span>الرئيسية</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-paperclip"></i
+                    ></span>
+                    <span>لوحة التحكم الخاصة بي</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-home"></i
+                    ></span>
+                    <span>ادارة جهات الاتصال</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-paperclip"></i
+                    ></span>
+                    <span>ادارة الشكاوي</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <header class="header">
+            <div class="header__items">
+              <li class="header__item">
+                <a
+                  href="#"
+                  class="header__item__link header__item__link--change-lang"
+                >
+                  English
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+            </div>
+          </header>
+
+          <section class="dashboard">
+            <div class="d-flex align-items-center justify-content-between">
+              <h2 class="main-heading">اضافة جهة اتصال</h2>
+            </div>
+            <form action="" class="add-contact__form">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="name">الاسم <span class="error">*</span></label>
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="الاسم"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="name"
+                      >الهاتف <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="الهاتف"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="name"
+                      >الجوال <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="الجوال"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="name"
+                      >البريد الإلكتروني <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="البريد الإلكتروني "
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="gov"
+                      >المحافظة <span class="error">*</span></label
+                    >
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="gov">منطقة <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>مدينة نصر</option>
+                      <option>التجمع الاول</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="name"
+                      >عنوان تفصيلي <span class="error">*</span></label
+                    >
+                    <textarea
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      rows="5"
+                      placeholder="اكتب العنوان هنا ..."
+                    ></textarea>
+                  </div>
+                </div>
+                <div
+                  class="
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                    col-12
+                  "
+                >
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" class="mx-2" name="notification" id="notification">
+                    <label class="tertiary-heading mb-0" for="notification">
+                      استقبال اشعارات الرسائل
+                      <span class="utl-color-grey"
+                        >(إعلام جهة الاتصال عن طريق البريد عن كل التحديثات)</span
+                      >
+                    </label>
+                </div>
+                  <div class="add-contact__form__buttons">
+                    <button class="btn btn-secondary btn-lg mx-3">حفظ</button>
+                    <button class="btn btn-dark btn-lg">تعيين</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="/../assets/js/wow.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

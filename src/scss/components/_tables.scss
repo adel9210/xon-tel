@@ -1,0 +1,39 @@
+.table {
+  thead {
+    th {
+      border-top: 0;
+      font-size: rem(14);
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 400;
+      text-align: center;
+      border-width: 1px;
+    }
+  }
+
+  tbody {
+    td {
+      font-size: rem(14);
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+.table-striped {
+
+  thead {
+    th {
+      border: 0;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    td {
+      border: 0;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+}

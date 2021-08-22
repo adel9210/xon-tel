@@ -1,0 +1,23 @@
+.header {
+    &__items {
+        list-style: none;
+        padding: 10px;
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        margin-inline-start: 10px;
+
+        &__link {
+
+            &--change-lang {
+                font-size: rem(14);
+                color: $color-dark-1;
+            }   
+        }
+    }
+
+}

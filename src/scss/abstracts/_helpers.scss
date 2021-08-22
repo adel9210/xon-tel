@@ -1,0 +1,47 @@
+.utl-icon-wrapper {
+  display: inline-block;
+  margin-inline-end: 10px;
+  vertical-align: middle;
+}
+
+.utl-show-more {
+    font-size: rem(14);
+    color: $text-color;
+    text-align: #{$right};
+}
+
+.error {
+    color: $color-red;
+}
+
+%status{
+    padding: 4px 7px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: rem(12);
+}
+
+.utl-status {
+    &--open {
+        @extend %status;
+
+        background-color: #feebec;
+        color: #f03738;
+        border-color: #f03738;
+    }
+
+    &--pending {
+        @extend %status;
+
+        background-color: #fef9e9;
+        color: #f3bb1c;
+        border-color: #f3bb1c;
+    }
+}
+
+.utl-link {
+    font-size: rem(12);
+    color: $color-blue;
+    font-weight: normal;
+}
