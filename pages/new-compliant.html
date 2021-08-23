@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/style-rtl.min.css" />
+    <title>Xon-Tel - New Compliant</title>
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loader__item">
+        <img src="../assets/img/logo.png" alt="Logo" />
+        <div></div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="row">
+        <div class="col-md-2 p-0">
+          <aside>
+            <div class="side-menu">
+              <div class="side-menu__top">
+                <img
+                  class="side-menu__logo"
+                  src="../assets/img/logo.png"
+                  alt="Logo"
+                />
+                <i class="icon icon-chat side-menu__burger"></i>
+              </div>
+              <ul class="side-menu__nav">
+                <li class="side-menu__nav__item side-menu__nav__item--active">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-home"></i
+                    ></span>
+                    <span>الرئيسية</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-paperclip"></i
+                    ></span>
+                    <span>لوحة التحكم الخاصة بي</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-home"></i
+                    ></span>
+                    <span>ادارة جهات الاتصال</span>
+                  </a>
+                </li>
+                <li class="side-menu__nav__item">
+                  <a href="">
+                    <span class="utl-icon-wrapper"
+                      ><i class="icon icon-paperclip"></i
+                    ></span>
+                    <span>ادارة الشكاوي</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <header class="header">
+            <div class="header__items">
+              <li class="header__item">
+                <a
+                  href="#"
+                  class="header__item__link header__item__link--change-lang"
+                >
+                  English
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-chat"></i>
+                </a>
+              </li>
+            </div>
+          </header>
+
+          <section class="dashboard">
+            <h2 class="main-heading">اضافة شكوي</h2>
+
+            <div class="card card--form">
+              <h3 class="primary-heading card__title">معلومات المشتكي</h3>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">اسم المشتكي <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card--form">
+              <h3 class="primary-heading card__title">معلومات المشتكي</h3>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">نوع الشكوي <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">مصدر الشكوي  <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">نوع الشارع   <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name"
+                      >عنوان الشكوى  <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="عنوان الشكوى "
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name"
+                      >وصف الشكوى  <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="وصف الشكوى "
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name"
+                      >أرفق ملف  <span class="error">*</span></label
+                    >
+                    <label for="file" class="form-control form-input form-file">حدد الملف أو اسحبه</label>
+                    <input
+                      id="file"
+                      type="file"
+                      class="d-none"
+                      placeholder="وصف الشكوى "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card--form">
+              <h3 class="primary-heading card__title">تفاصيل عنوان الشكوى</h3>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">الادارة <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">المحافظة <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">منطقة   <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">القطعة    <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="name"
+                      >شارع   <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="اسم الشارع"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="name"
+                      >الجادة  <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="الجادة"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="name"
+                      >عنوان تفصيلي   <span class="error">*</span></label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="اكتب العنوان هنا ..."
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="gov">أولوية   <span class="error">*</span></label>
+                    <select id="gov" class="form-control form-select">
+                      <option>اختر</option>
+                      <option>القاهره</option>
+                      <option>الاسكندريه</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="add-contact__form__buttons">
+              <button class="btn btn-secondary btn-lg mx-3">حفظ</button>
+              <button class="btn btn-dark btn-lg">تعيين</button>
+            </div>
+            <div class="card">
+              <h3 class="primary-heading card__title">
+                <span class="utl-icon-wrapper"
+                  ><i class="icon icon-chat"></i
+                ></span>
+                شكاوي مكررة
+              </h3>
+
+              <table class="table">
+                <thead>
+                  <th>ID</th>
+                  <th>عنوان الشكوي</th>
+                  <th>الادارة</th>
+                  <th>الحالة</th>
+                  <th>الوقت</th>
+                  <th>العنوان</th>
+                  <th>الحالة</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="" class="utl-link">CO - 002</a></td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><span class="utl-status--open">مفتوح</span></td>
+                    <td>00:06:33</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><button class="btn btn-tertiary">اضافة جهة اتصال</button></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="utl-link">CO - 002</a></td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><span class="utl-status--open">مفتوح</span></td>
+                    <td>00:06:33</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><button class="btn btn-tertiary">اضافة جهة اتصال</button></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="utl-link">CO - 002</a></td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><span class="utl-status--open">مفتوح</span></td>
+                    <td>00:06:33</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><button class="btn btn-tertiary">اضافة جهة اتصال</button></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="utl-link">CO - 002</a></td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><span class="utl-status--open">مفتوح</span></td>
+                    <td>00:06:33</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><button class="btn btn-tertiary">اضافة جهة اتصال</button></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="utl-link">CO - 002</a></td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><span class="utl-status--open">مفتوح</span></td>
+                    <td>00:06:33</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><button class="btn btn-tertiary">اضافة جهة اتصال</button></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="utl-link">CO - 002</a></td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><span class="utl-status--open">مفتوح</span></td>
+                    <td>00:06:33</td>
+                    <td>لوريم ايبسوم دولار</td>
+                    <td><button class="btn btn-tertiary">اضافة جهة اتصال</button></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="/../assets/js/wow.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

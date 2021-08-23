@@ -5,43 +5,80 @@
 }
 
 .utl-show-more {
-    font-size: rem(14);
-    color: $text-color;
-    text-align: #{$right};
+  font-size: rem(14);
+  color: $text-color;
+  text-align: #{$right};
+}
+
+.utl-primary-hover {
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+  }
 }
 
 .error {
-    color: $color-red;
+  color: $color-red;
 }
 
-%status{
-    padding: 4px 7px;
-    border: 1px solid #000;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: rem(12);
+.color-blue {
+  color: $color-blue;
+}
+
+%status {
+  padding: 4px 26px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: rem(12);
 }
 
 .utl-status {
-    &--open {
-        @extend %status;
+  &--open {
+    @extend %status;
 
-        background-color: #feebec;
-        color: #f03738;
-        border-color: #f03738;
-    }
+    background-color: #feebec;
+    color: #f03738;
+    border-color: #f03738;
+  }
 
-    &--pending {
-        @extend %status;
+  &--pending {
+    @extend %status;
 
-        background-color: #fef9e9;
-        color: #f3bb1c;
-        border-color: #f3bb1c;
-    }
+    background-color: #fef9e9;
+    color: #f3bb1c;
+    border-color: #f3bb1c;
+  }
+
+  &--fixed {
+    @extend %status;
+
+    color: $color-green;
+    border-color: $color-green;
+  }
+
+  &--working {
+    @extend %status;
+
+    color: $color-blue;
+    border-color: $color-blue;
+  }
 }
 
 .utl-link {
-    font-size: rem(12);
-    color: $color-blue;
-    font-weight: normal;
+  font-size: rem(12);
+  color: $color-blue;
+  font-weight: normal;
+}
+
+.no-data-found {
+  font-size: rem(14);
+  color: $text-color;
+  text-align: center;
+  background-color: $color-grey-light;
+  padding: 12px 15px;
+  border-radius: 6px;
 }

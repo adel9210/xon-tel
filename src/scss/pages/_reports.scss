@@ -1,0 +1,57 @@
+.reports {
+  &__statistics {
+      display: flex;
+      justify-content: space-between;
+      text-align: start;
+
+    &__heading-1 {
+      font-size: rem(14);
+    }
+
+    &__heading-2 {
+      font-size: rem(12);
+      color: $text-color;
+    }
+
+    &__link {
+      font-size: rem(11);
+      color: $text-color;
+    }
+
+    &__value {
+        font-size: rem(30);
+        font-weight: bold;
+        margin-inline-end: 40px;
+    }
+  }
+
+  &__complaints {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 1;
+        flex-basis: 18%;
+        margin-inline-end: 20px;
+        transition: all .2s;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        &__image {
+            width: 36px;
+            height: 36px;
+            background-color: $color-grey-light;
+            padding: 7px;
+            border-radius: 3px;
+        }
+        &:hover {
+            background-color: $color-blue;
+            color: $color-white;
+        }
+    }
+  }
+}

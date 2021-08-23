@@ -5,4 +5,12 @@
 
 .btn-lg {
     font-weight: normal;
+    font-size: rem(14);
+}
+
+.btn-tertiary {
+    background-color: $color-orange;
+    color: $color-white;
+    font-size: rem(12);
+    font-weight: normal;
 }

@@ -36,6 +36,24 @@
   }
 }
 
+.form-file {
+  color: $text-color;
+  font-size: rem(12);
+  position: relative;
+  margin-bottom: 0;
+
+  &::after {
+    content: "اختر الملف";
+    border: 1px solid #d8dae5;
+    border-radius: 6px;
+    position: absolute;
+    #{$right}: 0;
+    top: 0;
+    height: 100%;
+    padding: 6px 18px;
+  }
+}
+
 label {
   margin-bottom: 8px;
   color: #474d66;

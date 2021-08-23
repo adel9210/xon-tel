@@ -9,6 +9,15 @@
 		align-items: center;
 		color: $color-orange;
 	}
+
+	&--form {
+		background-color: $color-grey-light;
+		box-shadow: none;
+	}
+
+	&--shadow {
+		padding: 14px;
+	}
   }
 
   .card-small {
