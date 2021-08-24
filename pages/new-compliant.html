@@ -374,6 +374,44 @@
                 </tbody>
               </table>
             </div>
+
+            <div class="card">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+               Confirmation Modal
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">تاكيد الاجراء</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon-cancel"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="confirm-action__form">
+                        <h2 class="primary-heading text-center">للتاكيد ادخل كلمة المرور الخاصة بك</h2>
+                        <form action="" class="position-relative">
+                          <div class="form-group">
+                            <input type="password" placeholder="كلمة المرور الخاصة بك" class="form-control form-input confirm-action__form__input">
+                            <i class="icon icon-visibility confirm-action__form__icon"></i>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="col-md-12 text-left w-100">
+                        <button class="btn btn-secondary btn-lg mx-3">حفظ</button>
+                        <button class="btn btn-dark btn-lg">تعيين</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </section>
         </div>

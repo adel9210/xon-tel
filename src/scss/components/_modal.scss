@@ -49,3 +49,61 @@
     width: 90%;
    }
 }
+
+
+.modal {
+  &-header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .close {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-title {
+    font-size: rem(18);
+  }
+
+  &-body {
+    background-color: $color-grey-light;
+    padding: 40px 20px;
+  }
+
+  &-footer {
+    padding: 10px;
+
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+      .btn {
+        width: 100%;
+        margin-left: 0!important;
+        margin-right: 0!important;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+
+//////////////////////////////////
+.confirm-action__form {
+  &__input {
+    height: 50px;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 20px;
+    top: 19px;
+    cursor: pointer;
+
+    &::before {
+      color: $color-light-grey;
+    }
+  }
+}
