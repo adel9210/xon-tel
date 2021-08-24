@@ -1,0 +1,11 @@
+.dashboard {
+    &__break {
+        position: relative;
+        &__image {
+            content: "";
+            left: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}
