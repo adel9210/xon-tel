@@ -15,14 +15,26 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $('#menu-close-button').on('click', function(){
+  $("#menu-close-button").on("click", function () {
     $("#sideMenu").removeClass("mobile-menu");
-  })
+  });
 
   // Notification
-  $('#openNotification').on('click', function(){
-    $('#notificationWrapper').toggle()
-  })
+  $("#openNotification").on("click", function () {
+    $("#notificationWrapper").toggle();
+  });
+
+  // date picker
+  $(".datepicker")
+    .datepicker({
+      format: "dd/mm/yyyy",
+    })
+    .on("changeDate", function (e) {
+      $(this).datepicker("hide");
+    });
+
+  // select2
+  $(".form-select").select2();
 
   // render mobile menu
   // mobileNavMenuRender();

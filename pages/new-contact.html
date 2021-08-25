@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="../assets/css/select2.min.css" />
     <link rel="stylesheet" href="../assets/css/style-rtl.min.css" />
     <title>Xon-Tel - New Contact</title>
   </head>
@@ -19,8 +21,12 @@
     </div>
 
     <main class="main">
+      <a href="#" id="openSideMenu">
+        <i class="icon icon-menu side-menu__burger"></i>
+      </a>
+
       <div class="row">
-        <div class="col-md-2 p-0">
+        <div class="col-md-2 p-0" id="sideMenu">
           <aside>
             <div class="side-menu">
               <div class="side-menu__top">
@@ -29,7 +35,9 @@
                   src="../assets/img/logo.png"
                   alt="Logo"
                 />
-                <i class="icon icon-chat side-menu__burger"></i>
+                <a href="#" id="menu-close-button"
+                  ><i class="icon icon-cancel"></i
+                ></a>
               </div>
               <ul class="side-menu__nav">
                 <li class="side-menu__nav__item side-menu__nav__item--active">
@@ -56,6 +64,18 @@
                     <span>ادارة جهات الاتصال</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة جهات الاتصال</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة جهة اتصال</span>
+                    </a>
+                  </li>
+                </ul>
                 <li class="side-menu__nav__item">
                   <a href="">
                     <span class="utl-icon-wrapper"
@@ -64,11 +84,33 @@
                     <span>ادارة الشكاوي</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>لوحة تحكم الشكاوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة الشكاوى</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة شكوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>إحصائيات</span>
+                    </a>
+                  </li>
+                </ul>
               </ul>
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" id="dashboardContainer">
           <header class="header">
             <div class="header__items">
               <li class="header__item">
@@ -79,24 +121,72 @@
                   English
                 </a>
               </li>
+              <li class="header__item" id="openNotification">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-bell"></i>
+                </a>
+              </li>
+              <div class="notifications" id="notificationWrapper">
+                <h3 class="notifications__title">الاشعارات</h3>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+              </div>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <i class="icon icon-setting"></i>
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <img
+                    class="icon-svg"
+                    src="../assets/img/icon/play.svg"
+                    alt="Play Image"
+                  />
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <i class="icon icon-phone"> </i>
                 </a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                <a href="#" class="header__item__link header__item__link--user">
+                  <img src="../assets/img/user.jpg" alt="user" />
                 </a>
               </li>
             </div>
@@ -163,7 +253,11 @@
                     <label for="gov"
                       >المحافظة <span class="error">*</span></label
                     >
-                    <select id="gov" class="form-control form-select">
+                    <select
+                      id="gov"
+                      class="form-control form-select"
+                      data-select2-id="select6"
+                    >
                       <option>اختر</option>
                       <option>القاهره</option>
                       <option>الاسكندريه</option>
@@ -173,7 +267,7 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="gov">منطقة <span class="error">*</span></label>
-                    <select id="gov" class="form-control form-select">
+                    <select id="gov" class="form-control form-select"  data-select2-id="select7">
                       <option>اختر</option>
                       <option>مدينة نصر</option>
                       <option>التجمع الاول</option>
@@ -202,15 +296,21 @@
                     col-12
                   "
                 >
-                <div class="d-flex align-items-center">
-                  <input type="checkbox" class="mx-2" name="notification" id="notification">
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="checkbox"
+                      class="mx-2"
+                      name="notification"
+                      id="notification"
+                    />
                     <label class="tertiary-heading mb-0" for="notification">
                       استقبال اشعارات الرسائل
                       <span class="utl-color-grey"
-                        >(إعلام جهة الاتصال عن طريق البريد عن كل التحديثات)</span
+                        >(إعلام جهة الاتصال عن طريق البريد عن كل
+                        التحديثات)</span
                       >
                     </label>
-                </div>
+                  </div>
                   <div class="add-contact__form__buttons">
                     <button class="btn btn-secondary btn-lg mx-3">حفظ</button>
                     <button class="btn btn-dark btn-lg">تعيين</button>
@@ -228,6 +328,8 @@
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="/../assets/js/wow.min.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
     <script src="../assets/js/app.js"></script>
   </body>
 </html>

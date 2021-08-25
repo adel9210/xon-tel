@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="../assets/css/select2.min.css" />
     <link rel="stylesheet" href="../assets/css/style-rtl.min.css" />
     <title>Xon-Tel - Contact List</title>
   </head>
@@ -32,7 +34,9 @@
                   src="../assets/img/logo.png"
                   alt="Logo"
                 />
-                <a href="#" id="menu-close-button"><i class="icon icon-cancel"></i></a>
+                <a href="#" id="menu-close-button"
+                  ><i class="icon icon-cancel"></i
+                ></a>
               </div>
               <ul class="side-menu__nav">
                 <li class="side-menu__nav__item side-menu__nav__item--active">
@@ -124,23 +128,39 @@
               <div class="notifications" id="notificationWrapper">
                 <h3 class="notifications__title">الاشعارات</h3>
                 <a href="#" class="notifications__item">
-                  <h3 class="notifications__item__title">تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span></h3>
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
                   <span class="notifications__item__time"> ٣ د</span>
                 </a>
                 <a href="#" class="notifications__item">
-                  <h3 class="notifications__item__title">تم انشاء شكوي  <span class="utl-link">ID 35428</span></h3>
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
                   <span class="notifications__item__time"> ٣ د</span>
                 </a>
                 <a href="#" class="notifications__item">
-                  <h3 class="notifications__item__title">تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span></h3>
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
                   <span class="notifications__item__time"> ٣ د</span>
                 </a>
-                <a href="#" class="notifications__item notifications__item--unread">
-                  <h3 class="notifications__item__title">تم انشاء شكوي  <span class="utl-link">ID 35428</span></h3>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
                   <span class="notifications__item__time"> ٣ د</span>
                 </a>
-                <a href="#" class="notifications__item notifications__item--unread">
-                  <h3 class="notifications__item__title">تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span></h3>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
                   <span class="notifications__item__time"> ٣ د</span>
                 </a>
               </div>
@@ -151,18 +171,21 @@
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <img class="icon-svg" src="../assets/img/icon/play.svg" alt="Play Image">
+                  <img
+                    class="icon-svg"
+                    src="../assets/img/icon/play.svg"
+                    alt="Play Image"
+                  />
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-phone">
-                  </i>
+                  <i class="icon icon-phone"> </i>
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link header__item__link--user">
-                  <img src="../assets/img/user.jpg" alt="user">
+                  <img src="../assets/img/user.jpg" alt="user" />
                 </a>
               </li>
             </div>
@@ -185,50 +208,93 @@
                     <span>تصفية النتائج</span>
                   </h3>
                   <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                       <div class="form-group">
-                    
-                        <select id="gov" class="form-control form-select">
+                        <select
+                          id="gov"
+                          class="form-control form-select"
+                          data-select2-id="select1"
+                        >
                           <option>نوع الشكوي</option>
                           <option>القاهره</option>
                           <option>الاسكندريه</option>
                         </select>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                       <div class="form-group">
-                        <select id="gov" class="form-control form-select">
+                        <select
+                          id="gov"
+                          class="form-control form-select"
+                          data-select2-id="select2"
+                        >
                           <option>الادارة</option>
                           <option>القاهره</option>
                           <option>الاسكندريه</option>
                         </select>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                       <div class="form-group">
-                        <select id="gov" class="form-control form-select">
+                        <select
+                          id="gov"
+                          class="form-control form-select"
+                          data-select2-id="select3"
+                        >
                           <option>المنطقة</option>
                           <option>القاهره</option>
                           <option>الاسكندريه</option>
                         </select>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                       <div class="form-group">
-                        <select id="gov" class="form-control form-select">
+                        <select
+                          id="gov"
+                          class="form-control form-select"
+                          data-select2-id="select4"
+                        >
                           <option>بلوك</option>
                           <option>القاهره</option>
                           <option>الاسكندريه</option>
                         </select>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                       <div class="form-group">
-                        <select id="gov" class="form-control form-select">
+                        <select
+                          id="gov"
+                          class="form-control form-select"
+                          data-select2-id="select5"
+                        >
                           <option>المصدر</option>
                           <option>القاهره</option>
                           <option>الاسكندريه</option>
                         </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <div class="input-group form-date">
+                          <input
+                            type="text"
+                            class="form-control form-input datepicker"
+                            placeholder="من"
+                          />
+                          <i class="icon icon-calender"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <div class="input-group form-date">
+                          <input
+                            type="text"
+                            class="form-control form-input datepicker"
+                            placeholder="الي"
+                          />
+                          <i class="icon icon-calender"></i>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-12 text-left w-100 utl-action-buttons">
@@ -255,7 +321,7 @@
                         <th>الاولوية</th>
                         <th>الادارة</th>
                         <th>الحالة</th>
-                        <th>اسم المتصل	</th>
+                        <th>اسم المتصل</th>
                         <th>تاريخ الاصدار</th>
                         <th>صادر عن</th>
                         <th>الوقت</th>
@@ -303,7 +369,9 @@
                           <td>لوريم ايبسوم دولار</td>
                           <td>1</td>
                           <td>لوريم ايبسوم دولار</td>
-                          <td><span class="utl-status--working">قيد العمل</span></td>
+                          <td>
+                            <span class="utl-status--working">قيد العمل</span>
+                          </td>
                           <td>محمد</td>
                           <td>05/10/2020</td>
                           <td>Normal Agent</td>
@@ -315,19 +383,9 @@
                           <td>لوريم ايبسوم دولار</td>
                           <td>1</td>
                           <td>لوريم ايبسوم دولار</td>
-                          <td><span class="utl-status--fixed">تم الحل</span></td>
-                          <td>محمد</td>
-                          <td>05/10/2020</td>
-                          <td>Normal Agent</td>
-                          <td>00:06:33</td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td><a href="" class="utl-link">CO - 002</a></td>
-                          <td>لوريم ايبسوم دولار</td>
-                          <td>1</td>
-                          <td>لوريم ايبسوم دولار</td>
-                          <td><span class="utl-status--open">مفتوح</span></td>
+                          <td>
+                            <span class="utl-status--fixed">تم الحل</span>
+                          </td>
                           <td>محمد</td>
                           <td>05/10/2020</td>
                           <td>Normal Agent</td>
@@ -358,8 +416,18 @@
                           <td>00:06:33</td>
                           <td>-</td>
                         </tr>
-  
-      
+                        <tr>
+                          <td><a href="" class="utl-link">CO - 002</a></td>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>1</td>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td><span class="utl-status--open">مفتوح</span></td>
+                          <td>محمد</td>
+                          <td>05/10/2020</td>
+                          <td>Normal Agent</td>
+                          <td>00:06:33</td>
+                          <td>-</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -388,7 +456,9 @@
     <script src="../assets/js/jquery.nice-select.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="/../assets/js/wow.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
     <script src="../assets/js/app.js"></script>
   </body>
 </html>
