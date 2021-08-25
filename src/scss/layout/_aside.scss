@@ -40,6 +40,10 @@ aside {
             color: #000;
             background-color: transparent !important;
           }
+
+          .icon {
+            color: $color-blue;
+          }
         }
 
         &__sub-menu {
@@ -55,6 +59,18 @@ aside {
               background-color: transparent;
             }
           }
+        }
+
+        .icon {
+          font-size: rem(20);
+          color: #84919a;
+          &::before {
+            color: currentColor;
+          }
+        }
+
+        .icon-track {
+          font-size: rem(18);
         }
       }
     }
