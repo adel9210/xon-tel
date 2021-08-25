@@ -1,0 +1,44 @@
+.notifications {
+  position: absolute;
+  width: 400px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%);
+  top: 60px;
+  z-index: 999;
+  background-color: $color-white;
+  display: none;
+
+  &__item {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1f1ff;
+    
+
+    &__title {
+      font-size: rem(14);
+      color: $text-color;
+      font-weight: 700;
+    }
+
+    &__time {
+      font-size: rem(12);
+      color: $text-color;
+    }
+
+    &--unread {
+        background-color: #f6f8f9;
+    }
+  }
+
+  &__title {
+      font-size: rem(16);
+      background-color: #f0f7fe;
+      padding: 5px 15px;
+  }
+
+  @include media-breakpoint-down(sm){
+      width: 100%;
+      left: 0;
+  }
+}

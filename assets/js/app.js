@@ -19,6 +19,11 @@ jQuery(document).ready(function ($) {
     $("#sideMenu").removeClass("mobile-menu");
   })
 
+  // Notification
+  $('#openNotification').on('click', function(){
+    $('#notificationWrapper').toggle()
+  })
+
   // render mobile menu
   // mobileNavMenuRender();
 
