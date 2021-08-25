@@ -19,8 +19,11 @@
     </div>
 
     <main class="main">
+      <a href="#" id="openSideMenu">
+        <i class="icon icon-menu side-menu__burger"></i>
+      </a>
       <div class="row">
-        <div class="col-md-2 p-0">
+        <div class="col-md-2 p-0" id="sideMenu">
           <aside>
             <div class="side-menu">
               <div class="side-menu__top">
@@ -29,7 +32,9 @@
                   src="../assets/img/logo.png"
                   alt="Logo"
                 />
-                <i class="icon icon-chat side-menu__burger"></i>
+                <a href="#" id="menu-close-button"
+                  ><i class="icon icon-cancel"></i
+                ></a>
               </div>
               <ul class="side-menu__nav">
                 <li class="side-menu__nav__item side-menu__nav__item--active">
@@ -56,6 +61,18 @@
                     <span>ادارة جهات الاتصال</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة جهات الاتصال</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة جهة اتصال</span>
+                    </a>
+                  </li>
+                </ul>
                 <li class="side-menu__nav__item">
                   <a href="">
                     <span class="utl-icon-wrapper"
@@ -64,11 +81,33 @@
                     <span>ادارة الشكاوي</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>لوحة تحكم الشكاوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة الشكاوى</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة شكوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>إحصائيات</span>
+                    </a>
+                  </li>
+                </ul>
               </ul>
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" id="dashboardContainer">
           <header class="header">
             <div class="header__items">
               <li class="header__item">
@@ -79,24 +118,72 @@
                   English
                 </a>
               </li>
+              <li class="header__item" id="openNotification">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-bell"></i>
+                </a>
+              </li>
+              <div class="notifications" id="notificationWrapper">
+                <h3 class="notifications__title">الاشعارات</h3>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+              </div>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <i class="icon icon-setting"></i>
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <img
+                    class="icon-svg"
+                    src="../assets/img/icon/play.svg"
+                    alt="Play Image"
+                  />
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <i class="icon icon-phone"> </i>
                 </a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                <a href="#" class="header__item__link header__item__link--user">
+                  <img src="../assets/img/user.jpg" alt="user" />
                 </a>
               </li>
             </div>
@@ -123,26 +210,28 @@
                 حسب الاولوية
               </h3>
 
-              <table class="table">
-                <thead>
-                  <th>المستخدم</th>
-                  <th>عادي</th>
-                  <th>مستعجل</th>
-                  <th>اسبوعين</th>
-                  <th>شهر</th>
-                  <th>عقد مستقبلي</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>لوريم ايبسوم دولار</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <th>المستخدم</th>
+                    <th>عادي</th>
+                    <th>مستعجل</th>
+                    <th>اسبوعين</th>
+                    <th>شهر</th>
+                    <th>عقد مستقبلي</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>لوريم ايبسوم دولار</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </section>
         </div>

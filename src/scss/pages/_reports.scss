@@ -53,5 +53,13 @@
             color: $color-white;
         }
     }
+
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+     &__item {
+      margin-inline-end: 0;
+      margin-bottom: 0;
+     }
+    }
   }
 }

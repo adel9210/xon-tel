@@ -34,6 +34,9 @@
   border-radius: 6px;
   font-weight: normal;
   font-size: rem(12);
+  @include media-breakpoint-down(sm){
+    display: block
+  }
 }
 
 .utl-status {
@@ -86,4 +89,14 @@
 
 .icon-svg {
   width: 20px;
+}
+
+.utl-action-buttons {
+  @include media-breakpoint-down(sm){
+    & > button {
+      width: 100%;
+      margin: 0!important;
+      margin-bottom: 15px!important;
+    }
+  }
 }

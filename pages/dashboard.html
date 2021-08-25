@@ -19,8 +19,11 @@
     </div>
 
     <main class="main">
+      <a href="#" id="openSideMenu">
+        <i class="icon icon-menu side-menu__burger"></i>
+      </a>
       <div class="row">
-        <div class="col-md-2 p-0">
+        <div class="col-md-2 p-0" id="sideMenu">
           <aside>
             <div class="side-menu">
               <div class="side-menu__top">
@@ -29,7 +32,9 @@
                   src="../assets/img/logo.png"
                   alt="Logo"
                 />
-                <i class="icon icon-chat side-menu__burger"></i>
+                <a href="#" id="menu-close-button"
+                  ><i class="icon icon-cancel"></i
+                ></a>
               </div>
               <ul class="side-menu__nav">
                 <li class="side-menu__nav__item side-menu__nav__item--active">
@@ -56,6 +61,18 @@
                     <span>ادارة جهات الاتصال</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة جهات الاتصال</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة جهة اتصال</span>
+                    </a>
+                  </li>
+                </ul>
                 <li class="side-menu__nav__item">
                   <a href="">
                     <span class="utl-icon-wrapper"
@@ -64,11 +81,33 @@
                     <span>ادارة الشكاوي</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>لوحة تحكم الشكاوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة الشكاوى</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة شكوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>إحصائيات</span>
+                    </a>
+                  </li>
+                </ul>
               </ul>
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" id="dashboardContainer">
           <header class="header">
             <div class="header__items">
               <li class="header__item">
@@ -79,24 +118,72 @@
                   English
                 </a>
               </li>
+              <li class="header__item" id="openNotification">
+                <a href="#" class="header__item__link">
+                  <i class="icon icon-bell"></i>
+                </a>
+              </li>
+              <div class="notifications" id="notificationWrapper">
+                <h3 class="notifications__title">الاشعارات</h3>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a href="#" class="notifications__item">
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+                <a
+                  href="#"
+                  class="notifications__item notifications__item--unread"
+                >
+                  <h3 class="notifications__item__title">
+                    تم انشاء شكوي جديدة <span class="utl-link">ID 35428</span>
+                  </h3>
+                  <span class="notifications__item__time"> ٣ د</span>
+                </a>
+              </div>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <i class="icon icon-setting"></i>
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <img
+                    class="icon-svg"
+                    src="../assets/img/icon/play.svg"
+                    alt="Play Image"
+                  />
                 </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                  <i class="icon icon-phone"> </i>
                 </a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item__link">
-                  <i class="icon icon-chat"></i>
+                <a href="#" class="header__item__link header__item__link--user">
+                  <img src="../assets/img/user.jpg" alt="user" />
                 </a>
               </li>
             </div>
@@ -108,18 +195,26 @@
             <div class="row">
               <div class="col-md-8">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 mb-2">
                     <div class="dashboard__break card-small">
                       <h2 class="utl-card-label">وقت راحة</h2>
                       <h3 class="utl-card-value">00:00:00</h3>
-                      <img class="dashboard__break__image" src="../assets/img/icon/break-time.svg" alt="">
+                      <img
+                        class="dashboard__break__image"
+                        src="../assets/img/icon/break-time.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mb-2">
                     <div class="dashboard__break card-small card-small--1">
                       <h2 class="utl-card-label">وقت الصلاة</h2>
                       <h3 class="utl-card-value">00:00:00</h3>
-                      <img class="dashboard__break__image" src="../assets/img/icon/pray.svg" alt="">
+                      <img
+                        class="dashboard__break__image"
+                        src="../assets/img/icon/pray.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -131,30 +226,34 @@
                     ></span>
                     الشكاوي
                   </h3>
-                  <table class="table">
-                    <thead>
-                      <th>عنوان الشكوى</th>
-                      <th>الحالة</th>
-                      <th>الادارة</th>
-                      <th>الوقت</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td><span class="utl-status--open">مفتوح</span></td>
-                        <td>لوريم ايبسوم</td>
-                        <td>00:02:43</td>
-                      </tr>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td>
-                          <span class="utl-status--pending">قيد الانتظار</span>
-                        </td>
-                        <td>لوريم ايبسوم</td>
-                        <td>00:02:43</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <th>عنوان الشكوى</th>
+                        <th>الحالة</th>
+                        <th>الادارة</th>
+                        <th>الوقت</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td><span class="utl-status--open">مفتوح</span></td>
+                          <td>لوريم ايبسوم</td>
+                          <td>00:02:43</td>
+                        </tr>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>
+                            <span class="utl-status--pending"
+                              >قيد الانتظار</span
+                            >
+                          </td>
+                          <td>لوريم ايبسوم</td>
+                          <td>00:02:43</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <a href="#" class="utl-show-more">
                     <span>عرض كل السجلات</span>
                     <span class="utl-icon-wrapper"
@@ -171,30 +270,32 @@
                     ></span>
                     قوائم الإنتظار
                   </h3>
-                  <table class="table">
-                    <thead>
-                      <th>قائمة الانتظار (م) الاسم</th>
-                      <th>قائمة الانتظار (م) رقم</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td>657</td>
-                      </tr>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td>657</td>
-                      </tr>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td>657</td>
-                      </tr>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td>657</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <th>قائمة الانتظار (م) الاسم</th>
+                        <th>قائمة الانتظار (م) رقم</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>657</td>
+                        </tr>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>657</td>
+                        </tr>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>657</td>
+                        </tr>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>657</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <a href="#" class="utl-show-more">
                     <span>عرض كل السجلات</span>
                     <span class="utl-icon-wrapper"
@@ -211,37 +312,47 @@
                     ></span>
                     مكالمات لم يتم الرد عليها
                   </h3>
-                  <table class="table">
-                    <thead>
-                      <th>اسم المتصل</th>
-                      <th>رقم المتصل</th>
-                      <th>قائمة الانتظار</th>
-                      <th>الوقت</th>
-                      <th>الحالة</th>
-                      <th>وقت التعيين</th>
-                      <th>إجراءات</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td>56754675</td>
-                        <td>ايبسوم دولار</td>
-                        <td>00:02:43</td>
-                        <td><span class="utl-status--open">مفتوح</span></td>
-                        <td>00:04:03</td>
-                        <td><a href="#"><i class="icon icon-points"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>لوريم ايبسوم دولار</td>
-                        <td>56754675</td>
-                        <td>ايبسوم دولار</td>
-                        <td>00:02:43</td>
-                        <td><span class="utl-status--pending">قيد الانتظار</span></td>
-                        <td>00:04:03</td>
-                        <td><a href="#"><i class="icon icon-points"></i></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <th>اسم المتصل</th>
+                        <th>رقم المتصل</th>
+                        <th>قائمة الانتظار</th>
+                        <th>الوقت</th>
+                        <th>الحالة</th>
+                        <th>وقت التعيين</th>
+                        <th>إجراءات</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>56754675</td>
+                          <td>ايبسوم دولار</td>
+                          <td>00:02:43</td>
+                          <td><span class="utl-status--open">مفتوح</span></td>
+                          <td>00:04:03</td>
+                          <td>
+                            <a href="#"><i class="icon icon-points"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>لوريم ايبسوم دولار</td>
+                          <td>56754675</td>
+                          <td>ايبسوم دولار</td>
+                          <td>00:02:43</td>
+                          <td>
+                            <span class="utl-status--pending"
+                              >قيد الانتظار</span
+                            >
+                          </td>
+                          <td>00:04:03</td>
+                          <td>
+                            <a href="#"><i class="icon icon-points"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <a href="#" class="utl-show-more">
                     <span>عرض كل السجلات</span>
                     <span class="utl-icon-wrapper"
