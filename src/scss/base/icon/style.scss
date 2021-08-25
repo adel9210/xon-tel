@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8sqr9w');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8sqr9w#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?8sqr9w') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?8sqr9w') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?8sqr9w##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?do2wkp');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?do2wkp#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?do2wkp') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?do2wkp') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?do2wkp##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,6 +30,12 @@
 .icon-user-solid-circle {
   &:before {
     content: $icon-user-solid-circle; 
+  }
+}
+.icon-menu {
+  &:before {
+    content: $icon-menu;     
+    color: #5b6871;
   }
 }
 .icon-points {

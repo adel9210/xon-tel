@@ -19,8 +19,11 @@
     </div>
 
     <main class="main">
+      <a href="#" id="openSideMenu">
+        <i class="icon icon-menu side-menu__burger"></i>
+      </a>
       <div class="row">
-        <div class="col-md-2 p-0">
+        <div class="col-md-2 p-0" id="sideMenu">
           <aside>
             <div class="side-menu">
               <div class="side-menu__top">
@@ -29,7 +32,7 @@
                   src="assets/img/logo.png"
                   alt="Logo"
                 />
-                <i class="icon icon-chat side-menu__burger"></i>
+                <a href="#" id="menu-close-button"><i class="icon icon-cancel"></i></a>
               </div>
               <ul class="side-menu__nav">
                 <li class="side-menu__nav__item side-menu__nav__item--active">
@@ -56,6 +59,18 @@
                     <span>ادارة جهات الاتصال</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة جهات الاتصال</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة جهة اتصال</span>
+                    </a>
+                  </li>
+                </ul>
                 <li class="side-menu__nav__item">
                   <a href="">
                     <span class="utl-icon-wrapper"
@@ -64,12 +79,156 @@
                     <span>ادارة الشكاوي</span>
                   </a>
                 </li>
+                <ul class="side-menu__nav__item__sub-menu">
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>لوحة تحكم الشكاوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>قائمة الشكاوى</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>اضافة شكوي</span>
+                    </a>
+                  </li>
+                  <li class="side-menu__nav__item__sub-menu__item">
+                    <a href="">
+                      <span>إحصائيات</span>
+                    </a>
+                  </li>
+                </ul>
               </ul>
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" id="dashboardContainer">
           <header class="header">
+            <!-- <div class="header__mobile">
+              <nav class="nav-drill">
+                  <a href="#" id="closeMenu">x</a>
+                  <ul class="nav-items nav-level-1">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              الرئيسية
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              من نحن
+                          </a>
+                      </li>
+                      <li class="nav-item nav-expand">
+                          <a class="nav-link nav-expand-link" href="#">
+                              المركز الإعلامي
+                          </a>
+                          <ul class="nav-items nav-expand-content">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                      برنامج رقم 1
+                                  </a>
+                              </li>
+                              <li class="nav-item nav-expand">
+                                  <a class="nav-link nav-expand-link" href="#">
+                                      برنامج رقم 1
+                                  </a>
+                                  <ul class="nav-items nav-expand-content">
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">
+                                              برنامج فرعي رقم 1
+                                          </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">
+                                              برنامج فرعي رقم 1
+                                          </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">
+                                              برنامج فرعي رقم 1
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="nav-item nav-expand">
+                          <a class="nav-link nav-expand-link" href="#">
+                              مركز الوسائط
+                          </a>
+                          <ul class="nav-items nav-expand-content">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                      برنامج رقم 1
+                                  </a>
+                              </li>
+                              <li class="nav-item nav-expand">
+                                  <a class="nav-link nav-expand-link" href="#">
+                                      برنامج رقم 1
+                                  </a>
+                                  <ul class="nav-items nav-expand-content">
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">
+                                              برنامج فرعي رقم 1
+                                          </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">
+                                              برنامج فرعي رقم 1
+                                          </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">
+                                              برنامج فرعي رقم 1
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              اتصل بنا
+                          </a>
+                      </li>
+  
+                      <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button"
+                          id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
+                          تغيير
+                          اللغة</a>
+                      <div class="dropdown-menu" aria-labelledby="changeLang">
+                          <a class="dropdown-item" href="#">عربي</a>
+                          <a class="dropdown-item" href="#">English</a>
+                      </div>
+                      <ul class="social-links mt-5 mx-3">
+                          <li class="social-links__item">
+                              <a href="#" class="social-links__item__link">
+                                  <i class="icon icon-youtube"></i>
+                              </a>
+                          </li>
+                          <li class="social-links__item">
+                              <a href="#" class="social-links__item__link">
+                                  <i class="icon icon-instagram"></i>
+                              </a>
+                          </li>
+                          <li class="social-links__item">
+                              <a href="#" class="social-links__item__link">
+                                  <i class="icon icon-twitter"></i>
+                              </a>
+                          </li>
+                          <li class="social-links__item">
+                              <a href="#" class="social-links__item__link">
+                                  <i class="icon icon-facebook"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </ul>
+              </nav>
+  
+          </div> -->
             <div class="header__items">
               <li class="header__item">
                 <a
