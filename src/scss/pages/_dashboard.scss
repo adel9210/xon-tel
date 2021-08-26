@@ -1,11 +1,36 @@
 .dashboard {
-    &__break {
-        position: relative;
-        &__image {
-            content: "";
-            left: 0;
-            bottom: 0;
-            position: absolute;
-        }
+  &__break {
+    position: relative;
+    &__image {
+      content: "";
+      left: 0;
+      bottom: 0;
+      position: absolute;
     }
+  }
+
+  &__open-tickets {
+    & > div {
+      background-color: #f0f7fe!important;
+    }
+  }
+
+  &__complaint-source {
+      &>div {
+          
+        &:nth-child(1){
+            background-color: #e8fcf2;
+        }
+
+        
+        &:nth-child(2){
+            background-color: #f0f7fe;
+        }
+
+        
+        &:nth-child(3){
+            background-color: #fffbe5;
+        }
+      }
+  }
 }

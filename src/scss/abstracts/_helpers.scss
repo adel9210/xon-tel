@@ -28,6 +28,13 @@
   color: $color-blue;
 }
 
+.icon-color {
+  color: $color-orange;
+  &::before {
+  color: $color-orange;
+  }
+}
+
 %status {
   padding: 4px 26px;
   border: 1px solid #000;
@@ -91,6 +98,7 @@
 }
 
 .utl-action-buttons {
+  text-align: #{$right};
   @include media-breakpoint-down(sm) {
     & > button {
       width: 100%;

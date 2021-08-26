@@ -1,5 +1,6 @@
 aside {
   height: 100%;
+  min-height: 100vh;
   background-color: $color-grey-light;
 
   .side-menu {
@@ -62,7 +63,7 @@ aside {
         }
 
         .icon {
-          font-size: rem(20);
+          font-size: rem(22);
           color: #84919a;
           &::before {
             color: currentColor;
@@ -70,7 +71,11 @@ aside {
         }
 
         .icon-track {
-          font-size: rem(18);
+          font-size: rem(15);
+        }
+
+        .icon-user-solid-circle {
+          font-size: rem(17);
         }
       }
     }

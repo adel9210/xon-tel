@@ -25,24 +25,23 @@ jQuery(document).ready(function ($) {
   });
 
   // date picker
-  $(".datepicker")
-    .datepicker({
-      format: "dd/mm/yyyy",
-    })
-    .on("changeDate", function (e) {
-      $(this).datepicker("hide");
-    });
+  if ($(".datepicker").length) {
+    $(".datepicker")
+      .datepicker({
+        format: "dd/mm/yyyy",
+      })
+      .on("changeDate", function (e) {
+        $(this).datepicker("hide");
+      });
+  }
 
   // select2
-  $(".form-select").select2();
-
-  // render mobile menu
-  // mobileNavMenuRender();
+  if ($(".form-select").length) {
+    $(".form-select").select2();
+  }
 
   // open sub meu
   $(".side-menu__nav__item").on("click", function (event) {
-    // debugger
-
     event.preventDefault();
     $(this).next(".side-menu__nav__item__sub-menu").toggle();
   });
@@ -57,42 +56,3 @@ jQuery(document).ready(function ($) {
   });
   wow.init();
 });
-
-function mobileNavMenuRender() {
-  const navExpand = [].slice.call(document.querySelectorAll(".nav-expand"));
-  const backLink = `<li class="nav-item">
-	<a class="nav-link nav-back-link" href="javascript:;">
-		رجوع
-	</a>
-</li>`;
-
-  navExpand.forEach((item) => {
-    item
-      .querySelector(".nav-expand-content")
-      .insertAdjacentHTML("afterbegin", backLink);
-    item
-      .querySelector(".nav-link")
-      .addEventListener("click", () => item.classList.add("active"));
-    item
-      .querySelector(".nav-back-link")
-      .addEventListener("click", () => item.classList.remove("active"));
-  });
-
-  // ---------------------------------------
-  // not-so-important stuff starts here
-
-  const openMenuBtn = document.getElementById("openSideMenu");
-  const closeMenuBtn = document.getElementById("closeMenu");
-
-  if (window.innerWidth < 1200) {
-    openMenuBtn.addEventListener("click", function () {
-      $(".header__mobile").fadeIn("slow");
-      $("body").addClass("utl-opened");
-    });
-
-    closeMenuBtn.addEventListener("click", function () {
-      $(".header__mobile").fadeOut("slow");
-      $("body").removeClass("utl-opened");
-    });
-  }
-}

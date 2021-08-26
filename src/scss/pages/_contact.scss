@@ -1,8 +1,33 @@
 .add-contact {
-    &__form {
-        &__buttons {
-            // width: 100%;
-            // text-align: #{$right};
-        }
+  &__form {
+    &__buttons {
+      // width: 100%;
+      // text-align: #{$right};
     }
+  }
+}
+
+.contact-list {
+  &__table {
+    &__icon {
+      .icon {
+        font-size: 18px;
+        &::before {
+          color: #b3bac5;
+        }
+
+        &:hover {
+          &::before {
+            color: $color-blue;
+          }
+        }
+      }
+
+      &:first-child {
+        .icon {
+          font-size: 22px;
+        }
+      }
+    }
+  }
 }
