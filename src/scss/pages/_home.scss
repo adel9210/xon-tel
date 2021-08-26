@@ -109,11 +109,11 @@
 #openSideMenu {
     position: absolute;
     top: 15px;
-    right: 15%;
+    #{$left}: 15%;
     font-size: 21px;
     z-index: 99;
 }
 
 .menuPosition {
-    right: 15px!important;
+    #{$left}: 15px!important;
 }

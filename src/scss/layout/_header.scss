@@ -15,10 +15,10 @@
             font-size: rem(20);
 
             &--change-lang {
-                font-size: rem(18);
+                font-size: rem(16);
                 color: $color-dark-1;
-                border-left: 1px solid #f0f7fe;
-                padding-left: 10px;
+                border-#{$right}: 1px solid #f0f7fe;
+                padding-#{$right}: 10px;
 
                 // &::before {
                 //     content: "";

@@ -96,7 +96,7 @@ aside {
   @include media-breakpoint-down(lg) {
     & {
       display: none;
-      right: 0!important;
+      #{$left}: 0!important;
     }
   }
 }
@@ -104,7 +104,7 @@ aside {
 #openSideMenu {
     @include media-breakpoint-down(lg) {
         & {
-          right: 20px!important;
+          #{$left}: 20px!important;
         }
       }
 }

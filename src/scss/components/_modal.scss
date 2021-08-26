@@ -98,7 +98,7 @@
 
   &__icon {
     position: absolute;
-    left: 20px;
+    #{$right}: 20px;
     top: 19px;
     cursor: pointer;
 
