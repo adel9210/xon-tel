@@ -42,8 +42,13 @@ jQuery(document).ready(function ($) {
 
   // open sub meu
   $(".side-menu__nav__item").on("click", function (event) {
-    event.preventDefault();
-    $(this).next(".side-menu__nav__item__sub-menu").toggle();
+    debugger
+    const hasSubMenu = $(this).next(".side-menu__nav__item__sub-menu")
+    if (hasSubMenu.length) {
+      event.preventDefault();
+      hasSubMenu.toggle();
+    
+    }
   });
 
   // WOW JS
