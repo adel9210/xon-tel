@@ -111,3 +111,11 @@
 .utl-text-bold {
   font-weight: bold;
 }
+
+
+.icon-phone-green {
+  color: $color-green;
+  &::before {
+    color: currentColor;
+  }
+}

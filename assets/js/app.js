@@ -24,6 +24,13 @@ jQuery(document).ready(function ($) {
     $("#notificationWrapper").toggle();
   });
 
+  $(document).on("click", function(event){
+    var $trigger = $("#openNotification");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+      $("#notificationWrapper").hide();
+    }            
+});
+
   // date picker
   if ($(".datepicker").length) {
     $(".datepicker")
@@ -42,7 +49,6 @@ jQuery(document).ready(function ($) {
 
   // open sub meu
   $(".side-menu__nav__item").on("click", function (event) {
-    debugger
     const hasSubMenu = $(this).next(".side-menu__nav__item__sub-menu")
     if (hasSubMenu.length) {
       event.preventDefault();
