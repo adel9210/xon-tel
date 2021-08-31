@@ -24,12 +24,12 @@ jQuery(document).ready(function ($) {
     $("#notificationWrapper").toggle();
   });
 
-  $(document).on("click", function(event){
+  $(document).on("click", function (event) {
     var $trigger = $("#openNotification");
-    if($trigger !== event.target && !$trigger.has(event.target).length){
+    if ($trigger !== event.target && !$trigger.has(event.target).length) {
       $("#notificationWrapper").hide();
-    }            
-});
+    }
+  });
 
   // date picker
   if ($(".datepicker").length) {
@@ -49,13 +49,50 @@ jQuery(document).ready(function ($) {
 
   // open sub meu
   $(".side-menu__nav__item").on("click", function (event) {
-    const hasSubMenu = $(this).next(".side-menu__nav__item__sub-menu")
+    const hasSubMenu = $(this).next(".side-menu__nav__item__sub-menu");
     if (hasSubMenu.length) {
       event.preventDefault();
       hasSubMenu.toggle();
-    
     }
   });
+
+  // chart
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'معدل المكالمات التي تم الرد عليها',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+  
+  const config = {
+    type: "line",
+    data: data,
+    options: {
+      responsive: true,
+      plugins: {
+        // legend: {
+        //   position: "top",
+        // },
+        title: {
+          // display: true,
+          // text: "Chart.js Line Chart",
+        },
+      },
+    },
+  };
+
+  var myChart = new Chart(document.getElementById("myChart"), config);
 
   // WOW JS
   wow = new WOW({
