@@ -70,6 +70,14 @@
   }
 }
 
+.input-invalid {
+  border-color: $color-red;
+}
+
+.error-message {
+  color: $color-red;
+}
+
 .table-condensed {
   width: 100%;
 }
