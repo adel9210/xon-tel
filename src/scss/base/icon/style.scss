@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?do2wkp');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?do2wkp#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?do2wkp') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?do2wkp') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?do2wkp##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?quo110');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?quo110#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?quo110') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?quo110') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?quo110##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,9 +27,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-user-solid-circle {
+.icon-chat-1 {
   &:before {
-    content: $icon-user-solid-circle; 
+    content: $icon-chat-1; 
+  }
+}
+.icon-user-4 {
+  &:before {
+    content: $icon-user-4; 
+  }
+}
+.icon-user-1 {
+  &:before {
+    content: $icon-user-1; 
+  }
+}
+.icon-user-2 {
+  &:before {
+    content: $icon-user-2; 
   }
 }
 .icon-menu {
@@ -569,6 +584,46 @@
   &:before {
     content: $icon-invisible;     
     color: #ff9433;
+  }
+}
+.icon-chat-5 {
+  &:before {
+    content: $icon-chat-5; 
+  }
+}
+.icon-user-6 {
+  &:before {
+    content: $icon-user-6; 
+  }
+}
+.icon-chart-3 {
+  &:before {
+    content: $icon-chart-3; 
+  }
+}
+.icon-chart-4 {
+  &:before {
+    content: $icon-chart-4; 
+  }
+}
+.icon-chart-5 {
+  &:before {
+    content: $icon-chart-5; 
+  }
+}
+.icon-user-3 {
+  &:before {
+    content: $icon-user-3; 
+  }
+}
+.icon-sms-1 {
+  &:before {
+    content: $icon-sms-1; 
+  }
+}
+.icon-sms-2 {
+  &:before {
+    content: $icon-sms-2; 
   }
 }
 
